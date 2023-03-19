@@ -1,0 +1,288 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  color: rgba(208, 214, 213);
+  display: flex;
+  flex-direction: column;
+
+  background: -moz-radial-gradient(ellipse at 50% 50%,
+      rgba(32, 24, 120, 1) 0%,
+      rgba(19, 10, 43, 1) 100%);
+
+
+  background: -webkit-radial-gradient(ellipse at 50% 50%,
+      rgba(32, 24, 120, 1) 0%,
+      rgba(19, 10, 43, 1) 100%);
+
+
+  background: -o-radial-gradient(ellipse at 50% 50%,
+      rgba(32, 24, 120, 1) 0%,
+      rgba(19, 10, 43, 1) 100%);
+
+
+  background: -ms-radial-gradient(ellipse at 50% 50%,
+      rgba(32, 24, 120, 1) 0%,
+      rgba(19, 10, 43, 1) 100%);
+
+
+  background: radial-gradient(ellipse at 50% 50%,
+      rgba(32, 24, 120, 1) 0%,
+      rgba(19, 10, 43, 1) 100%);
+}
+
+.navbar {
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(17, 24, 39, .25);
+  border: 1px solid var(--tertiary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+
+}
+
+.navbar-links {
+  margin: 2px 20px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.bg {
+  /* The image used */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-container {
+
+  position: relative;
+}
+
+.middle-container {
+  margin-top: 10px;
+}
+
+.middle-container .university-site {
+  text-decoration: underline;
+}
+
+.bottom-container {
+  margin-top: 50px;
+}
+
+.top-container h1 {
+  color: #66bfbf;
+  font-size: 5em;
+}
+
+.top-container p {
+  color: #66bfbf;
+  font-size: 2em;
+  margin-top: -50px;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 152px;
+
+}
+
+.left-div:hover {
+  transition: 0.5s;
+  padding-left: 50px;
+
+}
+
+.right-div:hover {
+  transition: 0.5s;
+  padding-left: 50px;
+
+}
+
+.profile-pic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile-pic-container div {
+  width: 100px;
+  transition: 0.5s;
+}
+
+.profile {
+  margin-bottom: 30px;
+}
+
+.skills,
+.projects {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.skill-cols,
+.projects-cols {
+  margin-top: 80px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  margin-right: 60px;
+}
+
+.skill-text-web,
+.projects-text-bastore {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.web-dev-img,
+.bastore-img {
+  border-style: groove;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  box-shadow: 1px 1px 20px rgb(5 11 45);
+}
+
+.web-dev:hover>.skill-text-web,
+.bastore:hover>.projects-text-bastore {
+  transition: 1s;
+  opacity: 1;
+}
+
+.web-dev:hover>.web-dev-img,
+.bastore:hover>.bastore-img {
+  transition: 1s;
+  box-shadow: 3px 2px 40px rgb(5 11 45);
+}
+
+.bastore-img {
+  border-radius: 0;
+  width: 240px;
+  height: 100px;
+  background-color: black;
+}
+
+.skill-text-py,
+.projects-text-qs {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.py-dev-img,
+.qs-img {
+  border-style: groove;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  box-shadow: 1px 1px 20px rgb(5 11 45);
+}
+
+.py-dev:hover>.skill-text-py,
+.qs:hover>.projects-text-qs {
+  transition: 1s;
+  opacity: 1;
+}
+
+.py-dev:hover>.py-dev-img,
+.qs:hover>.qs-img {
+  transition: 1s;
+  box-shadow: 3px 2px 40px rgb(5 11 45);
+}
+
+.qs-img {
+  border-radius: 0;
+  width: 240px;
+  height: 100px;
+}
+
+.skill-text-java,
+.projects-text-gptclone {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.java-dev-img,
+.gptclone-img {
+  border-style: groove;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  box-shadow: 1px 1px 20px rgb(5 11 45);
+}
+
+.java-dev:hover>.skill-text-java,
+.gptclone:hover>.projects-text-gptclone {
+  transition: 1s;
+  opacity: 1;
+}
+
+.java-dev:hover>.java-dev-img,
+.gptclone:hover>.gptclone-img {
+  transition: 1s;
+  box-shadow: 3px 2px 40px rgb(5 11 45);
+}
+
+.gptclone-img {
+  border-radius: 0;
+  width: 240px;
+  height: 100px;
+}
+
+.links {
+  justify-content: space-between;
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.links img {
+  width: 40px;
+}
