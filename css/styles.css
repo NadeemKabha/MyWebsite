@@ -166,6 +166,7 @@ h3 {
 
 .skill-cols,
 .projects-cols {
+  margin-left:92px;
   margin-top: 80px;
   justify-content: space-between;
   flex-direction: row;
